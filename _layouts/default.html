@@ -5,21 +5,31 @@ layout: compress
 <!DOCTYPE html>
 <html data-current="{{ page.section }}" lang="en">
 
-  {% include head.html %}
 
-  <body>
+    {% include head.html %}
 
-    {% include header.html %}
+    <body class="page-template-default page page-id-15 page-parent light-theme">
 
-      <main>
-          <div id="wow">Awesooome</div>
 
-      {{ content }}
 
-    </main>
+        <div class="template template-page">
+            <div class="dark-wrapper">
+                <div class="width-constrainer tablet-up">
+                    {% include header.html %}
+                </div>
+            </div>
+        </div>
 
+        <div class="width-constrainer-narrower">
+            <div class="article-wrapper">
+                <div class="content article">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </body>
     {% include footer.html %}
 
-  </body>
+    </body>
 
 </html>
