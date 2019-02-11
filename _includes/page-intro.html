@@ -1,5 +1,19 @@
+{% if page.banner and page.banner != '' %}
+<div class="width-constrainer">
+    <div class="banner">
+        <img alt="Banner" src="{{page.banner}}"/>
+    </div>
+</div>
+{% endif %}
+
 {% if page.intro_paragraph and page.intro_paragraph != '' %}
-  <p class="intro">
-    {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
-  </p>
+<div class="template template-page">
+    <div class="width-constrainer-narrower intro-wrapper">
+        <div class="intro">
+            <p>
+                {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+            </p>
+        </div>
+    </div>
+</div>
 {% endif %}
