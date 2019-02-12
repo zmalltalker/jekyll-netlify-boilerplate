@@ -44,12 +44,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-  - name: 'employee'
-    label: 'Employee'
-    folder: '_employees'
-    sort: 'name:asc'
-    create: true
-    slug: '{{slug}}'
+  - name: "employee"
+    label: "Employee"
+    folder: "_employees"
+    sort: "name:asc"
+    create: true #
+    identifier_field: "email"
+    slug: "{{email}}"
     fields:
       - {label: 'Name', name: 'name', widget: 'string'}
       - {label: 'Email', name: 'email', widget: 'string'}
