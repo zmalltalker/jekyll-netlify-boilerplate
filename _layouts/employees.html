@@ -12,9 +12,9 @@ layout: default
 
 
   <ul>
-    {% for employee in site.employees    %}
+    {% for employee in site.employees %}
       <li>
-          <h4><a href="{{ employee.url }}">{{ employee.name }}</a></h4>
+          <h4>{{ employee.name }}</h4>
           <p>{{ employee.email }}</p>
       </li>
     {% endfor %}

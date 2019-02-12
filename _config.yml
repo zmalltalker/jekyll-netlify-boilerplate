@@ -68,6 +68,8 @@ kramdown:
 #  - _redirects
 #  - _headers
 
+collections:
+  - employees
 # Exclude from processing.
 # The following items will not be processed.
 exclude:
