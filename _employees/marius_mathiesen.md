@@ -4,6 +4,7 @@ name: Marius Mårnes Mathiesen
 slug: marius_mathiesen
 position: Chief Strategy Officer
 email: marius@shortcut.no
+phone: 92609538
 ---
 
 

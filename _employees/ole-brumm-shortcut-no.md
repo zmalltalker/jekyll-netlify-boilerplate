@@ -1,6 +1,6 @@
 ---
 name: Ole Brumm
 email: ole.brumm@shortcut.no
-position: pooh
+position: Chief Pooh Officer
+phone: 92609538
 ---
-

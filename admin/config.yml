@@ -55,3 +55,4 @@ collections: # A list of collections the CMS should be able to edit
       - {label: 'Name', name: 'name', widget: 'string'}
       - {label: 'Email', name: 'email', widget: 'string'}
       - {label: 'Position', name: 'position', widget: 'string'}
+      - {label: 'Phone', name: 'phone', widget: 'string'}

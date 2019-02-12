@@ -4,20 +4,23 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 
-{% include page-intro.html %}
 
 {{ content }}
 
-<section>
+<div class="people-grid">
 
-
-  <ul>
     {% for employee in site.employees %}
-      <li>
-          <h4>{{ employee.name }}</h4>
-          <p>{{ employee.email }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-
-</section>
+    <div class="person utvikling">
+        <div  class="image" style="background-image: url(https://shortc-4392.rask29.raskesider.no/wp-content/uploads/2018/12/tommuy.png)"></div>
+        <div class="text-wrapper">
+            <h2 class="name">{{employee.name}}</h2>
+            <p class="work-title">{{employee.position}}</p>
+            <p class="phone">{{employee.phone}}</p>
+            <p class="email">
+                <a href="mailto: {{employee.email}}">{{employee.email}}</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
