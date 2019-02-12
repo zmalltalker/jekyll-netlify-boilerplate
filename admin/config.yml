@@ -56,3 +56,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: 'Email', name: 'email', widget: 'string'}
       - {label: 'Position', name: 'position', widget: 'string'}
       - {label: 'Phone', name: 'phone', widget: 'string'}
+
+  - name: 'project'
+    label: 'Project'
+    folder: '_projects'
+    sort: 'name:asc'
+    create: true
+    slug: '{{name}}'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Image', name: 'image', widget: 'image'}

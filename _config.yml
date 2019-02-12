@@ -76,6 +76,7 @@ behance_username: Shortcut-no
 
 collections:
   - employees
+  - projects
 # Exclude from processing.
 # The following items will not be processed.
 exclude:
