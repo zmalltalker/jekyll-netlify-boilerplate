@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Shortcut
-email: webmaster@shortcut.no
+email: post@shortcut.no
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml.
@@ -67,6 +67,12 @@ kramdown:
 #include:
 #  - _redirects
 #  - _headers
+
+twitter_username: shortcut_no
+facebook_username: shortcut.no
+linkedin_username: shortcut-as
+instagram_username: shortcut_no
+behance_username: Shortcut-no
 
 collections:
   - employees
