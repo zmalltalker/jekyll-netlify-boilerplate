@@ -12,36 +12,32 @@ layout: compress
 
 
         <div class="template template-projects">
-            <div class="dark-wrapper">
-                <div class="width-constrainer tablet-up">
-                    {% include header.html %}
-                </div>
-            </div>
-        </div>
-
-        <div class="width-constrainer">
-            <div class="grid-group">
-
-                {% for project in site.projects %}
-                <div class="smaller-items-wrapper">
-                    <a href="/projects/{{project.slug}}" class="item" style="background-image: url({{project.image}})">
-                        <div class="overlay">
-                            <div class="overlay-text-wrapper">
-                                <h2 class="title smaller">{{project.title}}</h2>
-                                <p class="customer smaller">{{project.title</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                {{project.title}}
-            </div>
-            {% endfor %}
+            {% include header.html %}
 
             {{ content }}
+
+            <div class="width-constrainer">
+                <div class="grid-group">
+                    {% for project in site.projects %}
+                    {% increment idx %}
+                    <div class="smaller-items-wrapper">
+                        <a href="{{project.url}}" class="item" style="background-image: url({{project.image}})">
+                            <div class="overlay">
+                                <div class="overlay-text-wrapper">
+                                    <h2 class="title smaller">{{project.title}} - {{ idx }}</h2>
+                                    <p class="customer smaller">{{project.customer}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
         </div>
 
-    </body>
-    {% include footer.html %}
+
+        {% include footer.html %}
 
     </body>
 

@@ -75,8 +75,10 @@ instagram_username: shortcut_no
 behance_username: Shortcut-no
 
 collections:
-  - employees
-  - projects
+  employees:
+  projects:
+      output: true
+
 # Exclude from processing.
 # The following items will not be processed.
 exclude:

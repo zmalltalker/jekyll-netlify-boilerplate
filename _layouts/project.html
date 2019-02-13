@@ -1,0 +1,78 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+
+
+    {% include head.html %}
+
+    <body class="page-template-default page page-id-15 page-parent light-theme">
+
+
+        <div class="template template-project">
+            {% include header.html %}
+
+
+
+            <div class="width-constrainer-narrow">
+
+                <div class="breadcrumb">
+                    <a href="/projects">Projects</a>
+                    <div class="divider">/</div>
+                    <span>{{page.title}}</span>
+                </div>
+
+                <div class="title-wrapper">
+                    <div class="logo" style="background-image: url({{page.icon}})"></div>
+                    <div class="text-wrapper">
+                        <div class="title">
+                            {{page.title}}
+                        </div>
+                        <div class="customer">
+                            {{page.customer}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meta-wrapper">
+                    <h2 class="meta-title">About</h2>
+                    <table>
+                        <tr>
+                            <td class="meta-attribute">App</td>
+                            <td class="meta-value">{{page.title}}</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-attribute">Customer</td>
+                            <td class="meta-value">{{page.customer}}</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-attribute">Year</td>
+                            <td class="meta-value">{{page.year}}</td>
+                        </tr>
+                        <tr>
+                            <td class="meta-attribute">Platforms</td>
+                            <td class="meta-value">{{page.platforms}}</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="meta-title">Work</h2>
+                    <p>XXX Meta Description</p>
+                </div>
+
+                <div class="article-wrapper">
+                    <div class="pattern"></div>
+                    <div class="content article">
+                        {{content}}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        {% include footer.html %}
+
+    </body>
+
+</html>

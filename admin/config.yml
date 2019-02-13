@@ -67,3 +67,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Image', name: 'image', widget: 'image'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Customer', name: 'customer', widget: 'string'}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - {label: 'Icon', name: 'icon', widget: 'image', default: '/assets/img/securitas-logo-square.png'}
+      - {label: 'Year', name: 'year', widget: 'string'}
+      - label: 'Platforms'
+        name: 'platforms'
+        widget: 'select'
+        options: ["iOS", "Android","Cloud"]
