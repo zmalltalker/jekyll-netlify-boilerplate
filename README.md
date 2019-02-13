@@ -2,6 +2,8 @@
 
 *Note: Check out my [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate). It does pretty much the same as this project but uses the [Eleventy](https://www.11ty.io/) static site generator. It's fast, flexible and doesn't require Ruby.*
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/97110085-f9b6-4a88-8f2c-b06347ca0a6b/deploy-status)](https://app.netlify.com/sites/priceless-edison-59f9ad/deploys)
+
 **A really simple Jekyll template for creating a fast, static website on Netlify with
 a continuous deployment workflow.**
 
