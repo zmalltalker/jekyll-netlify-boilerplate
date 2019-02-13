@@ -75,3 +75,4 @@ collections: # A list of collections the CMS should be able to edit
         name: 'platforms'
         widget: 'select'
         options: ["iOS", "Android","Cloud"]
+        multiple: true
