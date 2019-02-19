@@ -19,6 +19,8 @@
 
 # Redirect rule example
 
+functions = "functions/"
+
 #[[redirects]]
 #  from = "/*"
 #  to = "/blog/:splat"
