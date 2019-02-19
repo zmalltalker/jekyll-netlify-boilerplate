@@ -1,14 +1,9 @@
 ---
-layout: post
-name: Marius Mårnes Mathiesen
-slug: marius_mathiesen
-position: Chief Strategy Officer
+name: Marius Mårnes Mathiesenz
 email: marius@shortcut.no
+position: Chief Strategy Officer
 phone: 92609538
 ---
 
 
 Marius is amazeballs, and you know it
-
-
-### What the actual fuck
