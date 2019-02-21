@@ -1,10 +1,10 @@
 # specify main menu items here
 
-- text: About Shortcut
-  url: /about-shortcut
+- text: Why Shortcut?
+  url: /why-shortcut
+- text: People
+  url: /people
 - text: Work
   url: /projects
-- text: Shortcutters
-  url: /shortcutters
 - text: Career
   url: /career

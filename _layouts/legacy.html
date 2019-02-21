@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ "/assets/legacy.css" | relative_url }}">
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="site-nav">
+                <div class="site-nav-container">
+                    <ul class="site-nav-menu inline-list">
+                        <li><a class="site-nav-link">Why Shortcut?</a></li>
+                        <li><a class="site-nav-link">People</a></li>
+                        <li><a class="site-nav-link">Work</a></li>
+                        <li><a class="site-nav-link">Services</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="site-content">
+            <div class="container text-container blog-post">
+                <h1>{{ page.title }}</h1>
+                {% if page.intro_paragraph and page.intro_paragraph != '' %}
+                <p class="lead">
+                    {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+                </p>
+                {% endif %}
+                {{content}}
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a>Facebook</a></li>
+                <li><a>LinkedIN</a></li>
+                <li><a>Instagram</a></li>
+                <li><a>Behance</a></li>
+                <li><a>Twitter</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
